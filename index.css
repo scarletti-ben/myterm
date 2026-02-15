@@ -1,0 +1,146 @@
+/* - =========================
+- Root Variables
+- ========================= */
+
+:root {
+  --text-primary: hsl(0, 0%, 85%);
+  --text-secondary: hsl(0, 0%, 55%);
+  --text-tertiary: hsl(0, 0%, 100%);
+  --surface-primary: hsl(0, 0%, 15%);
+  --surface-secondary: hsl(0, 0%, 20%);
+  --surface-tertiary: hsl(0, 0%, 25%);
+  --accent-primary: hsl(210, 75%, 60%);
+  --accent-secondary: hsl(210, 100%, 25%);
+  --accent-tertiary: hsl(210, 80%, 70%);
+  --background: hsl(0, 0%, 16%);
+  --scrollbar: var(--text-primary) transparent;
+  --font-family: monospace;
+  --font-size: 16px;
+  --line-height: 1.5;
+}
+
+/* - =========================
+- Light Theme
+- ========================= */
+
+[data-theme="light"] {
+  --text-primary: hsl(0, 0%, 20%);
+  --text-secondary: hsl(0, 0%, 60%);
+  --text-tertiary: hsl(0, 0%, 0%);
+  --surface-primary: hsl(0, 0%, 100%);
+  --surface-secondary: hsl(0, 0%, 97%);
+  --surface-tertiary: hsl(0, 0%, 92%);
+  --accent-primary: hsl(210, 75%, 45%);
+  --accent-secondary: hsl(210, 100%, 92%);
+  --accent-tertiary: hsl(210, 80%, 30%);
+  --background: hsl(0, 0%, 100%);
+}
+
+/* - =========================
+- Ocean Light Theme
+- ========================= */
+
+[data-theme="ocean-light"] {
+  --text-primary: hsl(210, 40%, 25%);
+  --text-secondary: hsl(210, 50%, 50%);
+  --text-tertiary: hsl(210, 50%, 10%);
+  --surface-primary: hsl(210, 45%, 99%);
+  --surface-secondary: hsl(210, 40%, 96%);
+  --surface-tertiary: hsl(210, 35%, 90%);
+  --accent-primary: hsl(180, 90%, 45%);
+  --accent-secondary: hsl(180, 100%, 90%);
+  --accent-tertiary: hsl(180, 85%, 30%);
+  --background: hsl(210, 45%, 99%);
+}
+
+/* - =========================
+- Ocean Dark Theme
+- ========================= */
+
+[data-theme="ocean-dark"] {
+  --text-primary: hsl(180, 100%, 90%);
+  --text-secondary: hsl(210, 40%, 60%);
+  --text-tertiary: hsl(180, 100%, 95%);
+  --surface-primary: hsl(210, 40%, 18%);
+  --surface-secondary: hsl(210, 35%, 23%);
+  --surface-tertiary: hsl(210, 30%, 28%);
+  --accent-primary: hsl(180, 90%, 55%);
+  --accent-secondary: hsl(180, 100%, 25%);
+  --accent-tertiary: hsl(180, 85%, 70%);
+  --background: hsl(210, 45%, 12%);
+}
+
+/* - =========================
+- HTML and Body Styling
+- ========================= */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: auto;
+  position: relative;
+  box-sizing: border-box;
+  color: var(--text-primary);
+  background: var(--background);
+  scrollbar-color: var(--scrollbar);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+/* - =========================
+- Wildcard Styling
+- ========================= */
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: var(--scrollbar);
+}
+
+/* - =========================
+- Utility Classes
+- ========================= */
+
+.hidden {
+  display: none !important;
+}
+
+.debugging * {
+  box-shadow: 0 0 0 1px purple !important;
+}
+
+/* - =========================
+- Page Element Styling
+- ========================= */
+
+#page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 3rem;
+  position: relative;
+  overflow: auto;
+}
+
+/* - =========================
+- Link Styling
+- ========================= */
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--text-secondary);
+  text-decoration: underline;
+}
